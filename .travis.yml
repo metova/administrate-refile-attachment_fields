@@ -1,0 +1,18 @@
+language: ruby
+cache: bundler
+sudo: false
+rvm:
+  - 2.1.0
+  - 2.2.0
+  - 2.3.0
+env:
+  - TRAVIS=1
+deploy:
+  provider: rubygems
+  api_key:
+    secure: ARM2JGEokm/TaJvIIwGgdL4s0QuMlwdVXzwtE4TwiqiSQO2yp8Eet9B0o55O3fITV2Z9UGUBF/9ymoKD2S4m/iGOARosj8q+gmgE/84fdF3glAqTtkCPsUZH8fseAH41e4XYwWkoRhwbxHBVhLn5rVGO4oJKWtFGnddacDBolFQ=
+  gem:
+    master: administrate-refile-attachment_fields
+  on:
+    repo: metova/administrate-refile-attachment_fields
+    branch: master
