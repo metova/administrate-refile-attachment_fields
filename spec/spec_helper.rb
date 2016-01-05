@@ -1,9 +1,8 @@
-require File.expand_path("../../spec/dummy/config/environment.rb",  __FILE__)
-ActiveRecord::Migrator.migrations_paths = [File.expand_path("../../spec/dummy/db/migrate", __FILE__)]
-
-require 'rspec/rails'
+require 'combustion'
 require 'capybara/rspec'
+require 'rspec/rails'
 
+Combustion.initialize! :all
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|

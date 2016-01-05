@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "administrate"
   s.add_dependency "refile"
 
+  s.add_development_dependency "combustion", "~> 0.5.3"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec"
   s.add_development_dependency "rspec-rails"
