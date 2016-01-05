@@ -1,1 +1,5 @@
-<%= field.data.id.first(12) %>
+<% if field.data %>
+  <%= field.data.id.first(12) %>
+<% else %>
+  No image provided
+<% end %>
