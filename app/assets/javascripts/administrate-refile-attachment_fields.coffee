@@ -1,4 +1,3 @@
-#= require jquery
 #= require refile
 
 $(document).on 'ready page:load', ->
