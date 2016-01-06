@@ -11,6 +11,10 @@ module Administrate
         false
       end
 
+      def multiple?
+        false
+      end
+
       def to_partial_path
         "fields/attachment/#{page}"
       end
